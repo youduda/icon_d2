@@ -1,0 +1,11 @@
+numpy
+pandas
+metpy
+xarray
+dask
+basemap
+matplotlib
+seaborn
+scipy
+geopy
+beautifulsoup4
