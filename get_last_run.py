@@ -17,9 +17,11 @@ parser.add_argument('-l', '--levels_3d', help='List of 3d levels to be checked',
 
 args = parser.parse_args()
 
-var_2d_list = ['alb_rad', 'alhfl_s', 'apab_s', 'ashfl_s', 'asob_s', 'asob_t', 'aswdifd_s', 'aswdifu_s', 'aswdir_s', 'athb_s', 'athb_t', 'aumfl_s', 'avmfl_s', 'cape_con', 'cape_ml', 'ceiling', 'cin_ml', 'clch', 'clcl', 'clcm', 'clct', 'clct_mod', 'cldepth', 'dbz_850', 'dbz_cmax', 'dbz_ctmax', 'freshsnw', 'fr_ice', 'grau_gsp', 'hbas_con', 'hbas_sc', 'h_ice', 'h_snow', 'htop_con', 'htop_dc', 'htop_sc', 'hzerocl', 'lpi', 'lpi_max', 'lpi_con_max', 'pmsl', 'prg_gsp', 'prr_gsp', 'prs_gsp', 'ps', 'qv_2m', 'qv_s', 'rain_con', 'rain_gsp', 'relhum_2m', 'rho_snow', 'runoff_g', 'runoff_s', 'sdi2', 'snowc', 'snow_con', 'snow_gsp', 'snowlmt', 'sobs_rad', 'synmsg_bt_cl_ir10.8', 'synmsg_bt_cl_wv6.2', 't_2m', 'tch', 'tcm', 'tcond_max', 'tcond10_max', 'td_2m', 't_g', 'thbs_rad', 't_ice', 'tmax_2m', 'tmin_2m', 'tot_prec', 'tqc', 'tqc_dia', 'tqg', 'tqi', 'tqi_dia', 'tqr', 'tqs', 'tqv', 'tqv_dia', 'twater', 't_s', 't_snow', 'u_10m', 'uh_max', 'uh_max_low', 'uh_max_med', 'v_10m', 'vmax_10m', 'vorw_ctmax', 'w_ctmax', 'w_i', 'w_snow', 'ww', 'z0']
+# Removed because they are missing at the source: cape_con, dbz_ctmax, fr_ice, hbas_con, htop_con, lpi_con_max, qv_2m, sdi2, sobs_rad, tcond10_max, thbs_rad, t_s, uh_max_low, uh_max_med
+var_2d_list = ['alb_rad', 'alhfl_s', 'apab_s', 'ashfl_s', 'asob_s', 'asob_t', 'aswdifd_s', 'aswdifu_s', 'aswdir_s', 'athb_s', 'athb_t', 'aumfl_s', 'avmfl_s', 'cape_ml', 'ceiling', 'cin_ml', 'clch', 'clcl', 'clcm', 'clct', 'clct_mod', 'cldepth', 'dbz_850', 'dbz_cmax', 'freshsnw', 'grau_gsp', 'hbas_sc', 'h_ice', 'h_snow', 'htop_dc', 'htop_sc', 'hzerocl', 'lpi', 'lpi_max', 'pmsl', 'prg_gsp', 'prr_gsp', 'prs_gsp', 'ps', 'qv_s', 'rain_con', 'rain_gsp', 'relhum_2m', 'rho_snow', 'runoff_g', 'runoff_s', 'snowc', 'snow_con', 'snow_gsp', 'snowlmt', 'synmsg_bt_cl_ir10.8', 'synmsg_bt_cl_wv6.2', 't_2m', 'tch', 'tcm', 'tcond_max', 'td_2m', 't_g', 't_ice', 'tmax_2m', 'tmin_2m', 'tot_prec', 'tqc', 'tqc_dia', 'tqg', 'tqi', 'tqi_dia', 'tqr', 'tqs', 'tqv', 'tqv_dia', 'twater', 't_snow', 'u_10m', 'uh_max', 'v_10m', 'vmax_10m', 'vorw_ctmax', 'w_ctmax', 'w_i', 'w_snow', 'ww', 'z0']
 
-var_3d_list = ['clc', 'fi', 'omega', 'relhum', 't', 'u', 'v']
+# Removed because they are missing at the source: clc
+var_3d_list = ['fi', 'omega', 'relhum', 't', 'u', 'v']
 
 
 def get_url_paths(url, ext='', prefix='', params={}):
